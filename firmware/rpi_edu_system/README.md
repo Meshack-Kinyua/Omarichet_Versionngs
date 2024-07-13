@@ -139,6 +139,15 @@ Use the following command:
 ##### Scripts to capture still images 
 The following python code is used for capturing still pictures:
 
+**Thoughts:**
+1. Server commands [camera get pictures]
+2. Capture picture every 30 seconds 
+3. Save picture on SD
+4. Dump to PC command [
+
+
+
+
 
 
 
