@@ -93,6 +93,7 @@ make
 
 sudo make install
 ```
+
 ### BUILD
 ```
 mkdir build
@@ -105,10 +106,40 @@ cmake ..
 
 make
 ```
+
 ## Getting started with the EDUSAT
 
 
 ### Install software
 ### Setup Application
+
+### Using the Pi Camera
+#### Introduction 
+The  Pi camera allows us to capture images and record videos. To use it on the Pi, particularly the Pi-4, ensure you have the following:
+1. Raspberry Pi 4
+2. Pi camera with compatible ribbon cable
+3. Power supply for the Raspberry Pi
+
+#### Setting up the camera module 
+By default, the camera hardware comes enabled on the Raspberry Pi. From the latest 'Bullseye' release of Raspberry Pi OS, you no longer need to enable your camera within the Raspberry Pi configuration. 
+
+##### Taking still pictures 
+To take still pictures, run the following command on the pi terminal:  
+``` rpicam-still -o Desktop/image.jpg```
+
+Some Pis might show that the ```rpicam-still``` is not a valid command. In case of that error, use the following command:  
+```libcamera-still -o Desktop/image.jpg```
+
+I am going to use ```libcamera```, but you can change from ```rpicam-``` to ```libcamera-``` depending on your system. 
+
+##### Taking videos  
+Use the following command:  
+``` libcamera-vid -o Desktop/video.mp4```
+
+##### Scripts to capture still images 
+The following python code is used for capturing still pictures:
+
+
+
 
 
