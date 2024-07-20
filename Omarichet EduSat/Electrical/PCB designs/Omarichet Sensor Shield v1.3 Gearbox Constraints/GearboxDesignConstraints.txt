@@ -1,0 +1,3 @@
+Minimum Track width 0.7mm
+Minimum clearance between tracks 0.8mm
+Minimum Via size 0.3mm 

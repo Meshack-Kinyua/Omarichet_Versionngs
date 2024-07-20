@@ -1,0 +1,54 @@
+Source:,C:\Users\Gerald Mbuthia\Documents\Kicad Designs\Omarichet Sensor Shield 1.2\Omarichet Sensor Shield 1.2.kicad_sch,,,,,,,
+,,,,,,,,
+Date:,27/01/2023 13:03,,,,,,,
+,,,,,,,,
+Tool:,Eeschema (6.0.7),,,,,,,
+,,,,,,,,
+Generator:,C:\Program Files\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value_with_fp.py,,,,,,,
+,,,,,,,,
+Component Count:,37,,,,,,,
+,,,,,,,,
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor,,Price
+,,,,,,,,
+"C1, C5, ",2,1nF,C,Capacitor_SMD:C_0402_1005Metric,Unpolarized capacitor,UMK105BJ102KV-F,,$0.0055
+,,,,,,,,
+"C2, C4, C11, ",3,100nF,C,Capacitor_SMD:C_0402_1005Metric,Unpolarized capacitor,C1005X7R1C104KT000F,,$0.0125
+,,,,,,,,
+"C3, ",1,10nF,C,Capacitor_SMD:C_0402_1005Metric,Unpolarized capacitor,UMK105B7103KVHF,,$0.0046
+,,,,,,,,
+"C6, C7, C9, C10, ",4,0.1uF,C,Capacitor_SMD:C_0603_1608Metric,Unpolarized capacitor,C0603C104K4RECAUTO,,$0.0400
+,,,,,,,,
+"C8, ",1,2.2nF,C,Capacitor_SMD:C_0402_1005Metric,Unpolarized capacitor,GRM188R71H222KA01D$0.0072,,
+,,,,,,,,
+"D1, ",1,LED,LED,LED_SMD:LED_0603_1608Metric,Light emitting diode,NCD0603R3,,$0.0256
+,,,,,,,,
+,,,,,,,,
+"J1, ",1,Conn_01x09_Male,Conn_01x09_Male,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,"Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)",,,$1
+,,,,,,,,
+"J2, ",1,Conn_01x04_Male,Conn_01x04_Male,Connector_Wire:SolderWire-0.25sqmm_1x04_P4.2mm_D0.65mm_OD1.7mm_Relief,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",JLCPCB,,$1
+,,,,,,,,
+"J3, ",1,Conn_02x20_Odd_Even,Conn_02x20_Odd_Even,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,"Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",JLCPCB,,$1
+,,,,,,,,
+"R1, R2, R3, R4, R5, R8, R9, R11, ",8,4k7,R,Resistor_SMD:R_0402_1005Metric,Resistor,CR-02FL6---4K7,,$0.0005
+,,,,,,,,
+"R6, ",1,30k,R,Resistor_SMD:R_0402_1005Metric,Resistor,AECR0402F30K0K9,,$0.0023
+,,,,,,,,
+"R7, ",1,7k5,R,Resistor_SMD:R_0402_1005Metric,Resistor,CRCW04027K50FKED,,$0.0089
+,,,,,,,,
+"R10, ",1,R_Photo,R_Photo,OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical,Photoresistor,,,$0.1
+,,,,,,,,
+"R12, ",1,10k,R,Resistor_SMD:R_0402_1005Metric,Resistor,CR-02FL6---10K,,$0.009
+,,,,,,,,
+"U1, ",1,ACS712xLCTR-05B,ACS712xLCTR-05B,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"?5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8",ACS712ELCTR-05B-T,,$3.172
+,,,,,,,,
+"U2, ",1,BME280,BME280,Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering,"3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8",BME280,,$5.0965
+,,,,,,,,
+"U3, ",1,MPU-6050,MPU-6050,Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm,"InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C",MPU-6050,,$10.8793
+,,,,,,,,
+"U4, ",1,DHT11,DHT11,Sensor:Aosong_DHT11_5.5x12.0_P2.54mm,Temperature and humidity module,K-technics,,$2
+,,,,,,,,
+"U5, ",1,TXS0108EPW,TXS0108EPW,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,"Bidirectional  level-shifting voltage translator, TSSOP-20",TXS0108EPWR,,$0.6159
+,,,,,,,,
+"U6, ",1,MCP3008,MCP3008,Package_DIP:DIP-16_W7.62mm,"A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V",K-technics,,$3
+,,,,,,,,
+,,,,,,,Total (including PCB),$31.5179

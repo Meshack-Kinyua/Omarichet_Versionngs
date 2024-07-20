@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-06062020-057469";"";
+"REFERENCE";"105057-0001";"";
+"TraceParts.PartTitle";"Type A 2.0mm shielded USB PCB receptacle";"";
+"TraceParts.InstanceId";"90-06062020-0574692N3XX9WWY2MK673V115V3T3RA";"";
+"DESIGN";"Type A 2.0mm shielded USB PCB receptacle";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"Molex";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"MOLEX:90-06062020-057469";"";
