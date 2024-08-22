@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=SolarIn Pin=TP2-1
+Removed Pin From Net: NetName=USBIn Pin=TP4-1
+Removed Member From Class: ClassName=U_PowerInput&Switch Member=TP3
+Removed Member From Class: ClassName=U_PowerInput&Switch Member=TP4
+Change Component Comment : Designator=S1 Old Comment=SS-12D10L3 New Comment=Solar-USB Switch
+Change Component Designator: OldDesignator=SW2 NewDesignator=SW1
+Change Component Designator: OldDesignator=SW3 NewDesignator=SW2
+Change Component Designator: OldDesignator=SW4 NewDesignator=SW3
+Change Component Designator: OldDesignator=TP3 NewDesignator=TP2
+Change Component Designator: OldDesignator=TP5 NewDesignator=TP3
+Change Component Designator: OldDesignator=TP6 NewDesignator=TP4
+Change Component Designator: OldDesignator=TP7 NewDesignator=TP5
+Change Component Designator: OldDesignator=TP8 NewDesignator=TP6
+Change Component Designator: OldDesignator=TP9 NewDesignator=TP7
+Change Component Designator: OldDesignator=TP10 NewDesignator=TP8
+Change Component Designator: OldDesignator=TP11 NewDesignator=TP9
+Change Component Designator: OldDesignator=TP12 NewDesignator=TP10
+Change Component Designator: OldDesignator=TP13 NewDesignator=TP11

@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=U_Charging&1AOut3 Member=SW2
+Removed Member From Class: ClassName=U_PowerOutput&Switch Member=TP7
+Change Net Name : Old Net Name=NetC7_1 New Net Name=VIN
+Added Member To Class: ClassName=U_Charging&1AOut3 Member=Component SW3
+Added Member To Class: ClassName=U_PowerInput&Switch Member=Component TP2 TPAD6R
+Added Member To Class: ClassName=U_BatteryConn&Protection Member=Component TP4 TPAD6R
+Added Member To Class: ClassName=U_Charging&1AOut1 Member=Component TP6 TPAD6R
+Added Member To Class: ClassName=U_PowerOutput&Switch Member=Component TP9 TPAD6R

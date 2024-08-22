@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=SolarIn Pin=SW1-1
+Removed Pin From Net: NetName=NetC7_1 Pin=SW1-2
+Removed Pin From Net: NetName=USBIn Pin=SW1-3
+Removed Pin From Net: NetName=NetSW5_1 Pin=SW5-1
+Removed Pin From Net: NetName=NetJ8_1 Pin=SW5-2
+Removed Member From Class: ClassName=U_PowerInput&Switch Member=SW1
+Removed Member From Class: ClassName=U_PowerOutput&Switch Member=SW5
+Added Component: Designator=S1(SS12D10L3)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.helloxkb.com/public/images/pdf/SS-12D10XXX.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "9.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "XKB Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SS-12D10L3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S2(SS12D10L3)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.helloxkb.com/public/images/pdf/SS-12D10XXX.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "9.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "XKB Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SS-12D10L3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SolarIn Pin=S1-1
+Added Pin To Net: NetName=NetC7_1 Pin=S1-2
+Added Pin To Net: NetName=USBIn Pin=S1-3
+Added Pin To Net: NetName=NetJ8_1 Pin=S2-1
+Added Pin To Net: NetName=NetSW5_1 Pin=S2-2
+Change Net Name : Old Net Name=NetSW5_1 New Net Name=NetS2_2
+Added Member To Class: ClassName=U_PowerInput&Switch Member=Component S1 SS-12D10L3
+Added Member To Class: ClassName=U_PowerOutput&Switch Member=Component S2 Power Switch

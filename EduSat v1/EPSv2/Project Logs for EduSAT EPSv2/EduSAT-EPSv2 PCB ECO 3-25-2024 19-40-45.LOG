@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=PSOUT Pin=J8-1
+Removed Pin From Net: NetName=+5V Pin=J8-2
+Added Pin To Net: NetName=+5V Pin=J8-1
+Added Pin To Net: NetName=PSOUT Pin=J8-2
+Added Member To Class: ClassName=U_PowerInput&Switch Member=Component C1 1nF
+Added Member To Class: ClassName=U_BatteryConn&Protection Member=Component R8 100O
+Added Member To Class: ClassName=U_BatteryConn&Protection Member=Component R10 1kO
+Added Member To Class: ClassName=U_BatteryConn&Protection Member=Component R12 100O
+Added Member To Class: ClassName=U_BatteryConn&Protection Member=Component R15 100O

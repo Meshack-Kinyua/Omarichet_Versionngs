@@ -1,0 +1,27 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [EduSAT EPSv2.PrjPcb]
+   Generated File[EduSAT-EPSv2_Copper_Signal_Top.gbr]
+   Generated File[EduSAT-EPSv2_Copper_Signal_Bot.gbr]
+   Generated File[EduSAT-EPSv2_Pads_Bot.gbr]
+   Generated File[EduSAT-EPSv2_Pads_Top.gbr]
+   Generated File[EduSAT-EPSv2_Legend_Top.gbr]
+   Generated File[EduSAT-EPSv2_Legend_Bot.gbr]
+   Generated File[EduSAT-EPSv2_Soldermask_Top.gbr]
+   Generated File[EduSAT-EPSv2_Soldermask_Bot.gbr]
+   Generated File[EduSAT-EPSv2_Paste_Top.gbr]
+   Generated File[EduSAT-EPSv2_Paste_Bot.gbr]
+   Generated File[EduSAT-EPSv2_Keep-out.gbr]
+   Generated File[EduSAT-EPSv2_Profile.gbr]
+   Generated File[EduSAT-EPSv2_NPTH_Drill.gbr]
+   Generated File[EduSAT-EPSv2_PTH_Drill.gbr]
+   Generated File[EduSAT-EPSv2_Drawing_1.gbr]
+   Generated File[EduSAT-EPSv2_Drillmap_1.gbr]
+   Generated File[EduSAT-EPSv2.EXTREP]
+   Generated File[EduSAT-EPSv2.REP]
+
+
+Files Generated   : 18
+Documents Printed : 0
+
+Finished Output Generation At 14:23:13 On 6/15/2024

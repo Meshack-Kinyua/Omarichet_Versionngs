@@ -1,0 +1,395 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">6/15/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">14:18:47</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc" class="file"><acronym title="C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc">C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">21</td></tr>
+</table>
+</td>
+</table><a name="IDDF3H2FENAUD2MFEXGC124MS2OISCR3A1SNLJCMPU2IJZFZII5PZP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFAT24T5RFASGK35CJLTRWBGKEMY5YFQZNAXUCXPPN0D22BUFZZ">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ2NI0AEPYAK0DYU325J4QE0SXLPP4E3YLQCJ1UEJHTU4JTFNBMOE">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUQYJIRSNNG0VIUZZAHYGJIQI5IQY3WCGO0L4KC1WY4RRSNWRFWL">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJK1I2EBKEXS0EWLSL5NBP21QTECNZRNBBYKOSGJRRANVAFONRKKK">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXDNKVS2ALOJ5FW0EN35C3RUP0OCN3WDICSSMCSJOIVQPQZMMWSJP">Width Constraint (Min=0.127mm) (Max=0.711mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0GFRRTDSC2HOJSZPNQW5PVTJVHYWUQJZ5TSBO3LXQXPPSYIK4FMM">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVT3WUOXKLOT3DKGF2U5YNZTZXJ030SC5FOG4QFJCEFYOJ4BFBFTF">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4SVWV2NCBZAJJNLGN0UMXMG3GGCTRO3TSQVAQJBKIOJWVEM5K15L">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBZEV3ZRHYJQHF2RVYRPRMUCDRI2HCIOON4ACQZEWDQFKZ12X4B2O">Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3QLM2HJ4EOEWEL2I3MKCOHXLGIV3AF23TSXLJHOA4G0IWC01HJGB">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOPBQNIMOH1ZBHWESMPFSY2IY3BJKAP5OENF1BTHGRWAAIRNBETBG">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI3V4QWCKKZDLPNUHL4DLF0SZNSWPOCAVI3SHREHVATY3QD0VLZ">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXWXWCZSRW0UGNCK1GW2IRL520E5AE3M1CAWCEWMROZ52LWDCXNZF">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">21</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYGFDLX3QA1FKFVTWWC0JDB5Y2J15AGBK42L1MMGQDHD5JE3WBJQG">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">21</td>
+</tr>
+</table><br><a name="IDXWXWCZSRW0UGNCK1GW2IRL520E5AE3M1CAWCEWMROZ52LWDCXNZF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.217mil|Location2.X=1010.467mil|Location1.Y=3709.631mil|Location2.Y=3725.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.217mil|Location2.X=1010.467mil|Location1.Y=3709.631mil|Location2.Y=3725.881mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (0.219mm,59.131mm)(0.219mm,69.031mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.217mil|Location2.X=1010.467mil|Location1.Y=3319.867mil|Location2.Y=3336.117mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.217mil|Location2.X=1010.467mil|Location1.Y=3319.867mil|Location2.Y=3336.117mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (0.219mm,59.131mm)(11.719mm,59.131mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.217mil|Location2.X=1010.467mil|Location1.Y=3709.631mil|Location2.Y=3725.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=994.217mil|Location2.X=1010.467mil|Location1.Y=3709.631mil|Location2.Y=3725.881mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (0.219mm,69.031mm)(11.719mm,69.031mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581.521mil|Location2.X=1597.771mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581.521mil|Location2.X=1597.771mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (14.977mm,0.219mm)(14.977mm,11.719mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581.521mil|Location2.X=1597.771mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581.521mil|Location2.X=1597.771mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (14.977mm,0.219mm)(22.377mm,0.219mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581.521mil|Location2.X=1597.771mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1581.521mil|Location2.X=1597.771mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (14.977mm,68.821mm)(14.977mm,80.321mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1872.859mil|Location2.X=1889.109mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1872.859mil|Location2.X=1889.109mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (14.977mm,80.321mm)(22.377mm,80.321mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1872.859mil|Location2.X=1889.109mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1872.859mil|Location2.X=1889.109mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (22.377mm,0.219mm)(22.377mm,11.719mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1872.859mil|Location2.X=1889.109mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1872.859mil|Location2.X=1889.109mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (22.377mm,68.821mm)(22.377mm,80.321mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2046.008mil|Location2.X=2062.258mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2046.008mil|Location2.X=2062.258mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (26.775mm,0.219mm)(26.775mm,11.719mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2046.008mil|Location2.X=2062.258mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2046.008mil|Location2.X=2062.258mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (26.775mm,0.219mm)(34.175mm,0.219mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2337.347mil|Location2.X=2353.597mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2337.347mil|Location2.X=2353.597mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (34.175mm,0.219mm)(34.175mm,11.719mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2561.993mil|Location2.X=2578.243mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2561.993mil|Location2.X=2578.243mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (39.881mm,68.821mm)(39.881mm,80.321mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.332mil|Location2.X=2869.582mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.332mil|Location2.X=2869.582mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (39.881mm,80.321mm)(47.281mm,80.321mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.56mil|Location2.X=2652.81mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.56mil|Location2.X=2652.81mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (41.775mm,0.219mm)(41.775mm,11.719mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.56mil|Location2.X=2652.81mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.56mil|Location2.X=2652.81mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (41.775mm,0.219mm)(49.175mm,0.219mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.332mil|Location2.X=2869.582mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2853.332mil|Location2.X=2869.582mil|Location1.Y=4160.399mil|Location2.Y=4176.649mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (47.281mm,68.821mm)(47.281mm,80.321mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2927.898mil|Location2.X=2944.148mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2927.898mil|Location2.X=2944.148mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (49.175mm,0.219mm)(49.175mm,11.719mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3227.111mil|Location2.X=3243.361mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3227.111mil|Location2.X=3243.361mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (56.775mm,0.219mm)(56.775mm,11.719mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3227.111mil|Location2.X=3243.361mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3227.111mil|Location2.X=3243.361mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (56.775mm,0.219mm)(64.175mm,0.219mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3518.449mil|Location2.X=3534.699mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\USER\OneDrive\Desktop\Embedded\Cubesat\EduSAT v2\EduSAT EPSv2\EduSAT-EPSv2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3518.449mil|Location2.X=3534.699mil|Location1.Y=994.217mil|Location2.Y=1010.467mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.119mm &lt; 0.381mm) Between Board Edge And Track (64.175mm,0.219mm)(64.175mm,11.719mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

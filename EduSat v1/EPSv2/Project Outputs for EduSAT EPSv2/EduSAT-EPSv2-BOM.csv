@@ -1,0 +1,32 @@
+Line #,Name,Description,LCSC Part No.,Designator,Quantity
+,CL21B102KBANNNC,CL21 Series 0805 1nF 50V ±10% Tolerance X7R Multilayer Ceramic Chip Capacitor,C51210,"C1, C37",2
+,TCC0805X7R104K500DT,CL21 Series 0805 0.1uF 50V ±10% Tolerance X7R Multilayer Ceramic Chip Capacitor,C282732,"C2, C3, C4, C5, C14, C24, C34, C36",8
+,CL21A106KAYNNNE,CL21 Series 0805 10uF 25V ±10% Tolerance X5R Multilayer Ceramic Chip Capacitor,C15850,"C6, C7, C13, C15, C16, C17, C23, C25, C26, C27, C33, C35",12
+,CL21A226MAYNNNE,CL21 Series 0805 22uF 25V ±20% Tolerance X5R Multilayer Ceramic Chip Capacitor,C602037,"C8, C9, C10, C11, C12, C18, C19, C20, C21, C22, C28, C29, C30, C31, C32",15
+,DFLS130L-7,"Schottky Barrier Rectifier, 30 V, 1 A, -40 to 125 degC, 2-Pin SMD, RoHS, Tape and Reel",C110493,"D1, D3",2
+,KT-0805G,LED GREEN CLEAR SMD,C2297,"D2, D4, D11, D15, D19, D20",6
+,KT-0805Y,"LED Yellow, 75 mW, 80 mA, -55 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel",C2296,"D5, D6, D7",3
+,KT-0805R,"LED Red, 75 mW, 54 mcd, -55 to 85 degC, 2-Pin SMD, RoHS, Tape and Reel",C2295,"D8, D9, D10, D12, D13, D14, D16, D17, D18",9
+,DW06D,Integrated Circuit,C82123,"IC1, IC2, IC3",3
+,IP5306,Integrated Circuit,C181692,"IC4, IC6, IC8",3
+,SY6280AAC,Integrated Circuit,C55136,"IC5, IC7, IC9",3
+,HCZZ0139-2,CONN HEADER R/A 2POS 2.5MM,C7433737,"J1, J2, J4, J5, J6, J8",6
+,TYPE-C 6P(040),3A 1 Surface Mount?Right Angle 6P Female -40?~+85? Type-C SMD USB Connectors ROHS,C2887422,J3,1
+,HCZZ0139-3,CONN HEADER R/A 3POS 2.5MM,C7433738,J7,1
+,916-252A1113Y10210,USB 2.0 3A 1 Straight 4P Female -55?~+85? Type-A Plugin USB Connectors ROHS,C708911,J9,1
+,MCS0630-1R0MN2,Inductor,C385251,"L1, L2, L3",3
+,IRLML6344TRPBF,MOSFET (N-Channel),C6285738,"Q1, Q2, Q3",3
+,CR0805F81540G,125mW Thick Film Resistors 150V ±100ppm/? ±1% 154? 0805 Chip Resistor - Surface Mount ROHS,C3037416,R1,1
+,0805W8F7501T5E,"Thick Film Chip Resistor, 0805, 7.5k?, 1%, 100ppm/°C, 0.125W, 150V",C17807,R2,1
+,0805W8F3002T5E,"Thick Film Chip Resistor, 0805, 30k?, 1%, 100ppm/°C, 0.125W, 150V",C17621,R3,1
+,0805W8F5101T5E,Thick Film Chip Resistors 0805 5.1k? 0.125W 1% 100ppm/°C ,C27834,"R5, R6",2
+,0805W8F1001T5E,"Thick Film Chip Resistor, 0805, 1k?, 1%, 100ppm/°C, 0.125W, 150V",C17513,"R7, R10, R13",3
+,CR0805F105RP05Z,125mW Thick Film Resistors 150V ±100ppm/? ±1% 105? 0805 Chip Resistor - Surface Mount ROHS,C245222,"R4, R28",2
+,AECR0805F100RK9,125mW Thick Film Resistors 150V ±100ppm/? ±1% 100? 0805 Chip Resistor - Surface Mount ROHS,C328380,"R8, R9, R11, R12, R14, R15",6
+,RS-05L2R00FT,125mW Thick Film Resistors 150V ±1% ±250ppm/? 2? 0805 Chip Resistor - Surface Mount ROHS,C304864,"R16, R20, R24",3
+,0805W8F1002T5E,10k? 125mW 150V Thick Film Resistors ±1% ±100ppm/? 0805 Chip Resistor - Surface Mount ROHS,C17414,"R17, R21, R25",3
+,0805W8F6801T5E,125mW Thick Film Resistors 150V ±100ppm/? ±1% 6.8k? 0805 Chip Resistor - Surface Mount ROHS,C17772,"R19, R23, R27",3
+,RL06FTNR500,500m? ±1% 0603 Current Sense Resistors/Shunt Resistors ROHS,C912154,"R18, R22, R26",3
+,SS-12D10L3,3A Straight SPDT 125V 125V 3A 1?? Black Plugin Slide Switches ROHS,C319013,"S1, S2",2
+,TSC015A03526A,4.5mm 3.5mm 50mA Round Button Brick nogging 4.5mm 260gf 12V SMD Tactile Switches ROHS,C2888900,"SW1, SW2, SW3",3
+,ACS712ELCTR-05B-T,SENSOR CURRENT HALL 5A AC/DC,C44471,"U1, U2",2

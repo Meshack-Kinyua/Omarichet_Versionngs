@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=TP11 NewDesignator=TP12
+Added Component: Designator=TP11(TP06R)
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5V Pin=TP11-1
+Added Member To Class: ClassName=U_PowerOutput&Switch Member=Component TP12 TPAD6R
