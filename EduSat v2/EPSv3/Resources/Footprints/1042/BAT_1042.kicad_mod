@@ -1,5 +1,5 @@
 
-(footprint BAT_1042 (layer F.Cu) (tedit 66F6882F)
+(footprint BAT_1042 (layer F.Cu) (tedit 66F68F0B)
   (descr "")
   (fp_text reference REF** (at -34.925 -11.43 0) (layer F.SilkS)
     (effects (font (size 1.0 1.0) (thickness 0.15)))
