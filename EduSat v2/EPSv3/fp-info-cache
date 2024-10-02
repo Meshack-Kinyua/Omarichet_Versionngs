@@ -1,4 +1,11 @@
-23039488557957904
+23058494056508362
+BQ24032ARHLRG4
+IC_MSP430FR2522IRHLR
+
+
+0
+29
+29
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -53640,10 +53647,31 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
+DFLS130L-7
+DIO_DFLS130L-7
+
+
+0
+2
+2
 DW06D
-SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR
+DW06D_SFE
 
+DW06D 
+0
+6
+6
+DW06D
+DW06D_SFE-L
 
+DW06D 
+0
+6
+6
+DW06D
+DW06D_SFE-M
+
+DW06D 
 0
 6
 6
@@ -56825,6 +56853,20 @@ heatsink
 0
 0
 0
+IP5306
+SOIC9P127_490X600X170L84X42T330X241N
+
+
+0
+9
+9
+IRLML6344TRPBF
+SOT95P240X112-3N
+
+
+0
+3
+3
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -63409,6 +63451,13 @@ LED_THT
 LED_VCCLite_5381H7_6.35x6.35mm
 Yellow 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
 Yellow 5381 Series LED
+0
+2
+2
+MCS0630-100MN1
+INDPM7366X300N
+MCS0630-100MN1
+Inductor
 0
 2
 2
@@ -83810,6 +83859,13 @@ Potentiometer vertical Vishay T73YP
 0
 3
 3
+Push_Button
+PTS647SM50SMTR2LFS
+PTS647SM50SMTR2LFS-2
+Switch
+0
+4
+4
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
@@ -87065,6 +87121,13 @@ rotary encoder
 0
 7
 6
+SPDT Switch
+SS12D10L3
+SS-12D10L3-1
+Switch
+0
+3
+3
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -88717,6 +88780,20 @@ Logo WEEE
 0
 0
 0
+TPS61023DRLR
+DRL0006A
+
+
+0
+6
+6
+TPS61232DRCR
+VREG_TPS61232DRCR
+
+
+0
+15
+15
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf

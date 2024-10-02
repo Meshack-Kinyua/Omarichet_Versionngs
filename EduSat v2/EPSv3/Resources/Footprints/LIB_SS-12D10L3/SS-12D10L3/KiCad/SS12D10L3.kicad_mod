@@ -1,0 +1,234 @@
+(footprint "SS12D10L3"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SS-12D10L3-1")
+	(tags "Switch")
+	(property "Reference" "S**"
+		(at 4.81373 -5.515918 0)
+		(layer "F.SilkS")
+		(uuid "85a4beb1-d26a-4635-a886-664fc179fd3a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "SS12D10L3"
+		(at 4.7 -7.62 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0da9e2fb-acd1-4e40-9d1d-7557362e65bd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b37fdb4d-c2fc-4047-b52a-4e67a31bfb65")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1e840c9b-6727-4693-8f7f-19fa167cdbe4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d1fc959-d3cb-4d43-898c-7c0b36d1338a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.8 -3.4)
+		(end 11.2 -3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c5ac001-2601-4e6e-a529-0622c0e96014")
+	)
+	(fp_line
+		(start -1.8 3.4)
+		(end -1.8 -3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "94d1cc69-e078-47fc-8711-ee09a9ce410b")
+	)
+	(fp_line
+		(start 11.2 -3.4)
+		(end 11.2 3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d958548-6656-4891-b120-e1ddb9e0d465")
+	)
+	(fp_line
+		(start 11.2 3.4)
+		(end -1.8 3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a70b35f1-8936-4493-af33-525aa5c720fa")
+	)
+	(fp_line
+		(start -2.8 -4.4)
+		(end 12.2 -4.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d851b3a6-e1dd-422a-94f7-2a702f5b9c50")
+	)
+	(fp_line
+		(start -2.8 4.4)
+		(end -2.8 -4.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "54c80074-4a91-4827-9b73-98a61fb5b387")
+	)
+	(fp_line
+		(start 12.2 -4.4)
+		(end 12.2 4.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6cf636f9-0db9-4495-a77d-b34563b2355b")
+	)
+	(fp_line
+		(start 12.2 4.4)
+		(end -2.8 4.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8c4af42d-88e9-40e2-964a-8abc48bf614d")
+	)
+	(fp_line
+		(start -1.8 -3.4)
+		(end 11.2 -3.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cbcf3fea-2789-49a7-a6b4-a5eb831c7e5d")
+	)
+	(fp_line
+		(start -1.8 3.4)
+		(end -1.8 -3.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c6fbeff3-c11f-42b8-a303-b8a3ffe5ae3d")
+	)
+	(fp_line
+		(start 11.2 -3.4)
+		(end 11.2 3.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f853363d-222a-49a3-9981-11ff7c33cd2d")
+	)
+	(fp_line
+		(start 11.2 3.4)
+		(end -1.8 3.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "14995f1e-2f8e-4d4f-b5cb-c48fe9536371")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4.7 7.62 0)
+		(layer "F.Fab")
+		(uuid "dbcd64ec-37de-40ae-a9b9-cea64dd2c1fd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 2.595 2.595)
+		(drill 1.73)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "75c9a458-6c2f-4c33-9df9-a5d7ae68ad37")
+	)
+	(pad "2" thru_hole circle
+		(at 4.7 0)
+		(size 2.595 2.595)
+		(drill 1.73)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f7a5bf01-dffe-47f7-8756-9932074707c8")
+	)
+	(pad "3" thru_hole circle
+		(at 9.4 0)
+		(size 2.595 2.595)
+		(drill 1.73)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4a9303a0-b097-497b-ac26-f5264e92352a")
+	)
+	(model "${KIPRJMOD}/Resources/Footprints/LIB_SS-12D10L3/SS-12D10L3/3D/SS-12D10L3.stp"
+		(offset
+			(xyz 4.7 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

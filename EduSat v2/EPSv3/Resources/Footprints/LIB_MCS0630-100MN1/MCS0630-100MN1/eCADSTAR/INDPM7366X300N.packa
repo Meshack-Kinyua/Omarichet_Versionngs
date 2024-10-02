@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MCS0630-100MN1"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-09-23-02:34:08)
+    (mountForm default
+        (footprintRef "INDPM7366X300N")
+        (spec "System")
+    )
+)

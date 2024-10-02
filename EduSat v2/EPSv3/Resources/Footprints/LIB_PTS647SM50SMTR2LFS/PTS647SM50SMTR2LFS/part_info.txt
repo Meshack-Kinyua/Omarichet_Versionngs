@@ -1,0 +1,9 @@
+Manufacturer=C & K COMPONENTS
+PartNumber=PTS647SM50SMTR2LFS
+PartCategory=Switch
+PackageCategory=Other
+PinCount=4
+Version=4.4
+Released=2019-04-17 17:11:59
+Downloaded=2024-10-02 11:48:50
+3D=Y

@@ -1,0 +1,9 @@
+Manufacturer=XKB Connectivity
+PartNumber=SS-12D10L3
+PartCategory=Switch
+PackageCategory=Other
+PinCount=3
+Version=4.8
+Released=2020-11-14 22:06:46
+Downloaded=2024-10-02 13:18:49
+3D=Y

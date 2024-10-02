@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PTS647SM50SMTR2LFS'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "C & K COMPONENTS", "PTS647SM50SMTR2LFS" (!) = "", "PTS647SM50SMTR2LFS", "Other", "611-PTS647SM50SMTR2L", "https://www.mouser.co.uk/ProductDetail/CK/PTS647SM50SMTR2LFS?qs=PqoDHHvF64%252BjK4ZB7f42kw%3D%3D", "PTS647SM50SMTR2LFS", "https://www.arrow.com/en/products/pts-647-sm50-smtr2-lfs/ck?region=europe", "Tactile Switches 50mA 12VDC, 1.8N 5.0mm H, G leads", "https://www.ckswitches.com/media/2567/pts647.pdf", "5.25 mm"
+END_PART
+
+END.

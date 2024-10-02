@@ -1,0 +1,18 @@
+.PTS647SM50SMTR2LFS :1 ;Tactile Switches 50mA 12VDC, 1.8N 5.0mm H, G leads
+PTS647SM50SMTR2LFS
+*STM S
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 4
+*DFN PTS647SM50SMTR2LFS
+~!Manufacturer_Name (C & K COMPONENTS)
+~!Manufacturer_Part_Number (PTS647SM50SMTR2LFS)
+~!Mouser Part Number (611-PTS647SM50SMTR2L)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/CK/PTS647SM50SMTR2LFS?qs=PqoDHHvF64%252BjK4ZB7f42kw%3D%3D)
+~!Arrow Part Number (PTS647SM50SMTR2LFS)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/pts-647-sm50-smtr2-lfs/ck?region=europe)
+~!Link Datasheet (https://www.ckswitches.com/media/2567/pts647.pdf)
+~!Height (5.25mm)
+~!3D_Model (PTS647SM50SMTR2LFS)
+PTS647SM50SMTR2LFS
+1.1!U 2.1!U 3.1!U 4.1!U 

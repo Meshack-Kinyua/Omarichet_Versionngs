@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SS_12D10L3'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "XKB Connectivity", "SS-12D10L3" (!) = "", "SS12D10L3", "Other", "", "", "", "", "Toggle switch, vertical foot two gears, plug, single row high temperature salt fog resistant 24 hours,13x6.8x6.4 flat black handle 3mm", "http://www.helloxkb.com/public/images/pdf/SS-12D10XXX.pdf", "9.6 mm"
+END_PART
+
+END.

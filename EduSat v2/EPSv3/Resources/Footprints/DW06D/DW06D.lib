@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model DW06D
+#/6904576/753679/2.50/6/3/Integrated Circuit
+DEF DW06D IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "DW06D" 850 200 50 H V L CNN
+F2 "SOT95P290X124-6N" 850 100 50 H I L CNN
+F3 "https://www.alldatasheet.com/view.jsp?Searchword=DW06D" 850 0 50 H I L CNN
+F4 "SOT-23-6 Battery Protection ICs RoHS" 850 -100 50 H I L CNN "Description"
+F5 "1.24" 850 -200 50 H I L CNN "Height"
+F6 "SHENZHEN FUMAN ELECTRONICS CO., LTD." 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "DW06D" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 850 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X V- 1 0 0 200 R 50 50 0 0 P
+X S1 2 0 -100 200 R 50 50 0 0 P
+X S2 3 0 -200 200 R 50 50 0 0 P
+X VSS 6 1000 0 200 L 50 50 0 0 P
+X VDD 5 1000 -100 200 L 50 50 0 0 P
+X D 4 1000 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

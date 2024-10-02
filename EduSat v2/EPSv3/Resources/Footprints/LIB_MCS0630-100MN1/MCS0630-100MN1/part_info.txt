@@ -1,0 +1,9 @@
+Manufacturer=Prosperity Dielectrics
+PartNumber=MCS0630-100MN1
+PartCategory=Inductor
+PackageCategory=Inductors Precision Moulded
+PinCount=2
+Version=1.1
+Released=2019-09-23 02:34:08
+Downloaded=2024-10-02 10:59:45
+3D=Y
