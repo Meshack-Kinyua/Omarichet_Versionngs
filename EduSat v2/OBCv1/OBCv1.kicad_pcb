@@ -42,7 +42,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(aux_axis_origin 50.8 127)
-		(grid_origin 50.8 127)
+		(grid_origin 91.070259 86.735491)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
@@ -230,7 +230,7 @@
 		(descr "USB Type C, right-angle, SMT, https://datasheet.lcsc.com/szlcsc/1811141824_XKB-Enterprise-U262-161N-4BVC11_C319148.pdf")
 		(tags "USB C Type-C Receptacle SMD")
 		(property "Reference" "J2"
-			(at 0 -5.715 270)
+			(at 0 -5.715 -90)
 			(layer "F.SilkS")
 			(uuid "434ecece-9db5-4f01-b75a-b71c1d4081e9")
 			(effects
@@ -423,7 +423,7 @@
 			(uuid "f07f0be9-8227-4723-b95c-b4fec5b34108")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "d1ec8745-8fd6-4eb8-8708-5d88277ee5d5")
 			(effects
@@ -651,11 +651,11 @@
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "105111cb-fa5f-4ba9-8908-180b683410b6")
-		(at 66.940388 49.710258 90)
+		(at 66.970259 49.885491 90)
 		(descr "Through hole straight socket strip, 2x20, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x20 2.54mm double row")
 		(property "Reference" "J1"
-			(at -1.27 -2.77 270)
+			(at -1.27 -2.77 -90)
 			(layer "F.SilkS")
 			(uuid "9a9c97e4-e2b5-4986-a61d-fe2523295c12")
 			(effects
@@ -888,7 +888,7 @@
 			(uuid "20feba80-f206-4039-86cf-82538ae6dd49")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -1.27 24.13 360)
+			(at -1.27 24.13 0)
 			(layer "F.Fab")
 			(uuid "6eec98e8-b177-4a18-90b8-fb5e521494b8")
 			(effects
@@ -2715,7 +2715,7 @@
 		(descr "Ai Thinker Ra-01 LoRa")
 		(tags "LoRa Ra-01")
 		(property "Reference" "U3"
-			(at 0 -1 270)
+			(at 0 -1 -90)
 			(layer "F.SilkS")
 			(uuid "27c40515-773e-445a-83dc-e2d0127dbda7")
 			(effects
@@ -2726,7 +2726,7 @@
 			)
 		)
 		(property "Value" "Ai-Thinker-Ra-02"
-			(at 0 9.75 270)
+			(at 0 9.75 -90)
 			(layer "F.Fab")
 			(uuid "bea86725-4a06-4aa6-b785-ef75b1d8b7ed")
 			(effects
@@ -2930,7 +2930,7 @@
 			(uuid "1ab2a91b-60f8-4be1-a3c7-001e0c768ec8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1 270)
+			(at 0 1 -90)
 			(layer "F.Fab")
 			(uuid "35867b3b-eba3-445f-b54e-e7c0c8d56b0b")
 			(effects
@@ -3335,7 +3335,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "f89e4dd8-9518-4e15-ace6-432f05abe26e")
 		)
 		(fp_line
@@ -3346,7 +3345,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "90b53218-a978-4b29-bc62-c10774b006ce")
 		)
 		(fp_line
@@ -3357,7 +3355,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "76d7e504-e045-46fb-9ca0-92a711e8ccec")
 		)
 		(fp_line
@@ -3368,7 +3365,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "b1c64436-95ec-4b2a-b4c6-f29ded61f5c6")
 		)
 		(fp_line
@@ -3379,7 +3375,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "a520db7b-3c2c-4cf4-b37f-9b24db731905")
 		)
 		(fp_line
@@ -3400,7 +3395,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "94cb1482-4b04-49e6-a5a5-f28d1a26b020")
 		)
 		(fp_line
@@ -3411,7 +3405,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "eb7970cb-dfde-4521-af64-77375751d0fe")
 		)
 		(fp_line
@@ -3422,7 +3415,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "a1e77055-c81a-4bd0-ba32-576f4acb706f")
 		)
 		(fp_line
@@ -3433,7 +3425,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "949b683d-ec80-4468-8809-c7d68977f49a")
 		)
 		(fp_line
@@ -3444,7 +3435,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "c2f6f1ff-d774-42cc-9430-d2b63d25b84e")
 		)
 		(fp_line
@@ -3525,7 +3515,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "21e3406d-ab57-4012-94b1-e29b0c13dadf")
 		)
 		(fp_line
@@ -3536,7 +3525,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "e8dcc615-5fab-4e03-88c8-16f9fa7451b8")
 		)
 		(fp_line
@@ -3547,7 +3535,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "5d7275ad-aaae-4a6d-a31f-08a65d451f61")
 		)
 		(fp_line
@@ -3558,7 +3545,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "08ecadb4-a458-4508-b2e2-fdb6d0cd295c")
 		)
 		(fp_line
@@ -3569,7 +3555,6 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(net 7471205)
 			(uuid "05fd9e15-e59e-4d2f-8169-0b485a9a3222")
 		)
 		(fp_text user "Antenna"
@@ -4479,6 +4464,7 @@
 	(gr_line
 		(start 50.801388 49.710258)
 		(end 50.8 123.75)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4490,6 +4476,7 @@
 		(start 54.05 127)
 		(mid 51.751903 126.048097)
 		(end 50.8 123.75)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4501,6 +4488,7 @@
 		(start 50.801388 49.710258)
 		(mid 51.753291 47.412161)
 		(end 54.051388 46.460258)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4511,6 +4499,7 @@
 	(gr_line
 		(start 131.339824 49.732)
 		(end 131.339824 123.749705)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4522,6 +4511,7 @@
 		(start 131.339824 123.749705)
 		(mid 130.387921 126.047802)
 		(end 128.089824 126.999705)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4532,6 +4522,7 @@
 	(gr_line
 		(start 128.089824 126.999705)
 		(end 54.05 127)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4542,6 +4533,7 @@
 	(gr_line
 		(start 54.051388 46.460258)
 		(end 128.089824 46.482)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -4553,6 +4545,7 @@
 		(start 128.089824 46.482)
 		(mid 130.387921 47.433903)
 		(end 131.339824 49.732)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type default)
