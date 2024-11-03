@@ -635,7 +635,7 @@
 			(pintype "passive")
 			(uuid "ff682a50-9aac-4b7b-add4-726a8fee0e4c")
 		)
-		(model "C:/Users/USER/OneDrive/Documents/GitHub/EduSat-Project/EduSat v2/Resources/USB4105-GF-A--3DModel-STEP-510211.STEP"
+		(model "${KIPRJMOD}/Resources/USB4105-GF-A--3DModel-STEP-510211.STEP"
 			(offset
 				(xyz 0 -1 0)
 			)
@@ -1957,7 +1957,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "69625d2c-046c-4b47-8026-8cb9716a08a4")
 		)
-		(model "C:/Users/USER/OneDrive/Documents/GitHub/EduSat-Project/EduSat v2/Resources/TF-01A/TF-01A.step"
+		(model "${KIPRJMOD}/Resources/TF-01A/TF-01A.step"
 			(offset
 				(xyz -1 -3.5 0)
 			)
@@ -3084,7 +3084,7 @@
 			(pintype "passive")
 			(uuid "2ad37ddd-6fd6-4b86-ab0d-2c4445eafd70")
 		)
-		(model "C:/Users/USER/OneDrive/Documents/GitHub/EduSat-Project/EduSat v2/Resources/RA-02--3DModel-STEP-269445.STEP"
+		(model "${KIPRJMOD}/Resources/RA-02--3DModel-STEP-269445.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
