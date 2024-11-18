@@ -37,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -49,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +63,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -220,7 +223,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "2965c3f0-71ae-4277-abbf-6fad4f12e167")
 	)
-	(model "${KIPRJMOD}/Resources/Footprints/LIB_PTS647SM50SMTR2LFS/PTS647SM50SMTR2LFS/3D/PTS647SM50SMTR2LFS.stp"
+	(model "C:/Users/Denis/Documents/GitHub/EduSat-Project/EduSat v2/EPSv3/Resources/Footprints/LIB_PTS647SM50SMTR2LFS/PTS647SM50SMTR2LFS/3D/PTS647SM50SMTR2LFS.stp"
 		(offset
 			(xyz 0 0 0)
 		)
