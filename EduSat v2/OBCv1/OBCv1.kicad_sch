@@ -8339,6 +8339,17 @@
 		)
 		(uuid "3bf37229-d1c2-4473-9324-674005d81032")
 	)
+	(label "D-"
+		(at 173.99 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c520a7b-5e9d-47d4-977b-eee4e6138703")
+	)
 	(label "ANA1"
 		(at 109.22 129.54 0)
 		(fields_autoplaced yes)
@@ -8536,6 +8547,17 @@
 			(justify right bottom)
 		)
 		(uuid "72fdf0ed-28d6-4770-9808-9d17ca8e4aeb")
+	)
+	(label "D+"
+		(at 173.99 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "79d372f9-74d7-4907-9849-0379e0450d5e")
 	)
 	(label "UV"
 		(at 133.35 87.63 180)
