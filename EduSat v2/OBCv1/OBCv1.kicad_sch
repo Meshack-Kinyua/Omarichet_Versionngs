@@ -5992,12 +5992,6 @@
 		(uuid "03686440-5680-4d5c-82c5-b58de75108d1")
 	)
 	(junction
-		(at 135.89 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "051f5ba3-0502-4bca-9465-1eae639f3734")
-	)
-	(junction
 		(at 238.76 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6739,6 +6733,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 124.46) (xy 152.4 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3395045b-69c4-4952-a265-c0054b7c3d36")
+	)
+	(wire
+		(pts
 			(xy 64.77 109.22) (xy 71.12 109.22)
 		)
 		(stroke
@@ -7419,16 +7423,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 124.46) (xy 135.89 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d43dba9-b0c3-47c5-88ff-c73e5aa8221e")
-	)
-	(wire
-		(pts
 			(xy 195.58 133.35) (xy 203.2 133.35)
 		)
 		(stroke
@@ -7776,16 +7770,6 @@
 			(type default)
 		)
 		(uuid "c3d977b8-deeb-478e-9810-90881f476a96")
-	)
-	(wire
-		(pts
-			(xy 133.35 124.46) (xy 135.89 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c418f583-c692-4644-b47c-eb43989908fa")
 	)
 	(wire
 		(pts
@@ -10217,6 +10201,71 @@
 			(project "OBCv1"
 				(path "/135eabb8-3fb8-4685-8bb7-68467cc8933b"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 152.4 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e10932c-dc47-4d05-aa56-2431415a4724")
+		(property "Reference" "#PWR036"
+			(at 152.4 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 152.4 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 152.4 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ff44b5a-6f5b-4a48-b8cf-d9aabf744499")
+		)
+		(instances
+			(project "OBCv1"
+				(path "/135eabb8-3fb8-4685-8bb7-68467cc8933b"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
