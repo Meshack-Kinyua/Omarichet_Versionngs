@@ -52,12 +52,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "hole_clearance|57560259|58345491|01db7aff-e5f5-44a4-8160-48a6b2e3bcc5|3ac945dc-4a46-4c2d-8902-6b99aba21491",
-        "hole_clearance|57560259|58545491|01db7aff-e5f5-44a4-8160-48a6b2e3bcc5|635ad112-d918-45fc-8a2a-c17e38e5f21a",
-        "hole_clearance|57560259|63945491|92645af0-d902-4349-938f-fcf2724be7cc|1d093701-895b-40b1-965f-de7dd78d3614",
-        "hole_clearance|57560259|64145491|92645af0-d902-4349-938f-fcf2724be7cc|a09826a6-5e72-43c7-911c-2cfd84d98e59"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -471,7 +466,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Fabrication Outputs/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
